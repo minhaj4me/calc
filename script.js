@@ -1,4 +1,4 @@
-let screen=document.querySelector("input");
+let screen = document.querySelector("input");
 // let C=document.querySelector(".C");
 // let add=document.querySelector(".add");
 // let sub=document.querySelector(".sub");
@@ -19,15 +19,18 @@ let screen=document.querySelector("input");
 // let equal=document.querySelector(".equal");
 
 
-function display(num){
-    screen.value+=num
+function display(num) {
+    screen.value += num
 }
 
-function total(){
-    screen.value=eval(screen.value)
+function total() {
+    screen.value = eval(screen.value)
 }
 
-function del()
-{
-    screen.value=""
+function allclear() {
+    screen.value = ""
+}
+
+function clr() {
+    screen.value = screen.value.slice(0, -1)
 }
